@@ -1,7 +1,7 @@
 function solution(i, j, k) {
     let s = '';
-    for (i; i <= j; i++){
+    for (i; i<=j; i++){
         s += i;
     }
-    return s.split(k).length-1
+    return s.split('').filter(v => v == k).length
 }
